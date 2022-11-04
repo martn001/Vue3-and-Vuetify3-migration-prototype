@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import HelloWorld from './components/HelloWorld';
+</script>
+
 <template>
   <v-app>
     <v-app-bar
@@ -25,7 +29,7 @@
         />
       </div>
 
-      <v-spacer></v-spacer>
+      <VSpacer />
 
       <v-btn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
@@ -38,23 +42,7 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <HelloWorld />
     </v-main>
   </v-app>
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld';
-
-export default {
-  name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
-};
-</script>

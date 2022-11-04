@@ -1,0 +1,12 @@
+@import "./variables.scss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+//noinspection ALL
+html {
+  -webkit-font-smoothing:  auto !important;
+  -moz-osx-font-smoothing: auto !important;
+}

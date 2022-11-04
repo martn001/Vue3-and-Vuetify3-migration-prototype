@@ -1,0 +1,60 @@
+$body-font-family: "Montserrat", sans-serif;
+$heading-font-family: "Times New Roman", Times, serif;
+
+$headings: (
+        'h1': (
+                'size': 6rem,
+                'font-family': $heading-font-family,
+                'text-transform': false
+        ),
+        'h2': (
+                'size': 3.75rem,
+                'font-family': $heading-font-family,
+                'text-transform': false
+        ),
+        'h3': (
+                'font-family': $heading-font-family,
+                'text-transform': false
+        ),
+        'h4': (
+                'font-family': $heading-font-family,
+                'text-transform': false
+        ),
+        'h5': (
+                'size': 28px,
+                'font-family': $heading-font-family,
+                'text-transform': false
+        ),
+        'h6': (
+                'font-family': $heading-font-family,
+                'text-transform': false
+        ),
+        'subtitle-1': (
+                'size': 1rem,
+                'font-family': $body-font-family,
+                'text-transform': false
+        ),
+        'subtitle-2': (
+                'size':  0.875rem,
+                'weight': 700,
+                'font-family': $body-font-family,
+        ),
+        'body-1': (
+                'font-family': $body-font-family,
+        ),
+        'body-2': (
+                'font-family': $body-font-family,
+        ),
+        'button': (
+                'size': 14px,
+                'weight': 400,
+                'text-transform': false,
+                'font-family': $body-font-family,
+        ),
+);
+
+$btn-letter-spacing: 0;
+
+.theme--light.v-btn::before {
+  opacity: 0 !important;
+}
