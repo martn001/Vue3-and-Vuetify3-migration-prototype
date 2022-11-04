@@ -1,18 +1,30 @@
-import Vue from "vue";
-import Vuetify from "vuetify";
+import "vuetify/styles";
+import { createVuetify, ThemeDefinition } from "vuetify";
+import * as components from "vuetify/components";
+import * as directives from "vuetify/directives";
 
-Vue.use(Vuetify);
+const dark: ThemeDefinition = {
+  dark: true,
+  colors: {
+    primary: "#013243",
+    accent: "#FE906D",
+    secondary: "#8098A1",
+    background: "#F2F6F7",
+  },
+};
 
-export default new Vuetify({
+export default createVuetify({
+  components,
+  directives,
   theme: {
-    dark: false,
+    defaultTheme: "dark",
     themes: {
-      light: {
-        primary: "#013243",
-        accent: "#FE906D",
-        secondary: "#8098A1",
-        background: "#F2F6F7",
-      },
+      dark,
+    },
+  },
+  defaults: {
+    VBtn: {
+      color: "primary",
     },
   },
 });
